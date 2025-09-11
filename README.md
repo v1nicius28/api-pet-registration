@@ -47,7 +47,7 @@ Clonar o repositório para a sua máquina.
 
 Iniciar o banco de dados utilizando o Docker Compose.
 
-Importante: É necessário que o Docker esteja instalado na máquina para que o Docker Compose funcione. Porém, não precisa ter o SQL Server instalado localmente, pois o banco roda dentro do container Docker.
+Importante: É necessário que o Docker esteja instalado na máquina para que o Docker Compose funcione. 
 
 Após o comando, a aplicação ficará disponível em um servidor local, pronta para receber requisições via Postman ou outro cliente REST.
 
