@@ -2,6 +2,7 @@ package PetRegistrationSystem.controller;
 
 import PetRegistrationSystem.model.Pet;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import PetRegistrationSystem.service.PetService;
@@ -18,7 +19,7 @@ public class PetController {
 
     @PostMapping
     public ResponseEntity<Pet> criarPet(@Valid @RequestBody Pet pet) {
-        return ResponseEntity.ok(service.salvarPet(pet));
+        return ResponseEntity.status(HttpStatus.CREATED).body(service.salvarPet(pet));
     }
 
     @GetMapping

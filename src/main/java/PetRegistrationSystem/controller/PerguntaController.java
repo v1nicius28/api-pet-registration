@@ -3,6 +3,7 @@ package PetRegistrationSystem.controller;
 import PetRegistrationSystem.model.Pergunta;
 import PetRegistrationSystem.service.PerguntaService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,7 @@ public class PerguntaController {
 
     @PostMapping
     public ResponseEntity<Pergunta> criarPergunta(@Valid @RequestBody Pergunta pergunta) {
-        return ResponseEntity.ok(service.salvarPergunta(pergunta));
+        return ResponseEntity.status(HttpStatus.CREATED).body(service.salvarPergunta(pergunta));
     }
 
     @GetMapping
