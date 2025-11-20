@@ -13,7 +13,7 @@ LABEL authors="VGM"
 
 WORKDIR /app
 
-COPY --from=build /app/target/PetRegistrationSystemSql-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/ApiPetRegistration-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
