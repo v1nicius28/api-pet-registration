@@ -1,8 +1,8 @@
-package PetRegistrationSystem.service;
+package petsystem.service;
 
-import PetRegistrationSystem.exception.ResourceNotFoundException;
-import PetRegistrationSystem.model.Pergunta;
-import PetRegistrationSystem.repository.PerguntaRepository;
+import petsystem.exception.ResourceNotFoundException;
+import petsystem.model.Pergunta;
+import petsystem.repository.PerguntaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

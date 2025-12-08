@@ -1,11 +1,11 @@
-package PetRegistrationSystem.controller;
+package petsystem.controller;
 
-import PetRegistrationSystem.model.Pet;
+import petsystem.model.Pet;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import PetRegistrationSystem.service.PetService;
+import petsystem.service.PetService;
 import java.util.List;
 
 @RestController

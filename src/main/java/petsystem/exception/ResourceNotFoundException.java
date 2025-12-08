@@ -1,4 +1,4 @@
-package PetRegistrationSystem.exception;
+package petsystem.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String msg) {

@@ -1,4 +1,4 @@
-package PetRegistrationSystem.exception;
+package petsystem.exception;
 
 import lombok.Getter;
 import lombok.Setter;

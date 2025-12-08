@@ -1,4 +1,4 @@
-package PetRegistrationSystem.model;
+package petsystem.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

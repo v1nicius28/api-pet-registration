@@ -1,6 +1,6 @@
-package PetRegistrationSystem.repository;
+package petsystem.repository;
 
-import PetRegistrationSystem.model.Pergunta;
+import petsystem.model.Pergunta;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PerguntaRepository extends JpaRepository<Pergunta, Long> {

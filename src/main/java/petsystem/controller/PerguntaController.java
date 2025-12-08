@@ -1,7 +1,7 @@
-package PetRegistrationSystem.controller;
+package petsystem.controller;
 
-import PetRegistrationSystem.model.Pergunta;
-import PetRegistrationSystem.service.PerguntaService;
+import petsystem.model.Pergunta;
+import petsystem.service.PerguntaService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

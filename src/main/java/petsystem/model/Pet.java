@@ -1,4 +1,4 @@
-package PetRegistrationSystem.model;
+package petsystem.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
