@@ -1,65 +1,58 @@
-<img width="1493" height="626" alt="Capturar6" src="https://github.com/user-attachments/assets/8a2804eb-25ce-47a3-996b-9b0bec61b1b3" />
-<img width="1498" height="694" alt="Capturar5" src="https://github.com/user-attachments/assets/c074d4a2-8b3a-48d9-a732-eb349ae4f5f8" />
+# 🐾 Pet Registration — API
 
-
-# Pet-Registration-System-Sql
-
-Este é um sistema de cadastro de pets desenvolvido em Java Spring Boot, integrado a um banco de dados SQL Server executado em contêiner via Docker Compose.
-O objetivo do projeto é permitir o gerenciamento de informações de animais de estimação e perguntas relacionadas, utilizando uma API REST.
+API REST criada em Java 17 + Spring Boot, responsável pelo cadastro, edição, remoção e consulta de pets. O backend está hospedado no Render e usa PostgreSQL hospedado no Neon.
 
 🚀 Tecnologias Utilizadas
-
-O projeto foi construído com as seguintes tecnologias:
 
 Java 17
 
 Spring Boot
 
+Spring Web
+
 Spring Data JPA
 
-SQL Server com Docker
+PostgreSQL (Neon)
 
-Maven para gerenciamento de dependências
+JUnit + Mockito (testes)
 
-Docker e Docker Compose para orquestração
+Lombok
 
-📂 Estrutura do Projeto
+Docker
 
-O projeto está organizado em módulos principais:
+🔗 Hospedagem
 
-Controllers: responsáveis por receber as requisições da API e direcionar as ações.
+Backend: hospedado no Render
 
-Services: contêm as regras de negócio.
+PostgreSQL: Neon
+A API é consumida pelo frontend hospedado na Vercel → https://front-pet-registration.vercel.app/.
 
-Repositories: fazem a comunicação com o banco de dados.
+🐾 Pets
 
-Models: representam as entidades como Pet, Endereço e Pergunta.
+Criar pet
 
-Configuração: arquivos de inicialização, propriedades e dependências.
+Listar todos
 
-⚙️ Configuração do Banco de Dados
+Atualizar
 
-O banco de dados utilizado é o SQL Server, configurado por meio do Docker Compose. O projeto já traz um arquivo de configuração que facilita a inicialização do banco em contêiner, sem a necessidade de instalação local.
+Excluir
 
-▶️ Como Executar o Projeto
+✔️ Validações aplicadas
 
-Clonar o repositório para a sua máquina.
+Campos de informações obrigatórios
 
-Iniciar o banco de dados utilizando o Docker Compose.
+🧪 Testes
 
-Importante: É necessário que o Docker esteja instalado na máquina para que o Docker Compose funcione. 
+O projeto contém testes automatizados:
 
-Após o comando, a aplicação ficará disponível em um servidor local, pronta para receber requisições via Postman ou outro cliente REST.
+Controller tests
 
-📡 Funcionalidades Disponíveis
+Service tests
 
-O sistema disponibiliza uma API com os seguintes recursos:
+📦 Build / Deploy
 
-Pets: cadastrar, listar, atualizar, buscar por identificador e excluir pets.
+O projeto contém:
 
-Perguntas: cadastrar e listar perguntas relacionadas ao sistema.
+Dockerfile
 
-🧪 Testes com Postman
-
-É possível testar a API utilizando o Postman, enviando requisições para os endpoints.
-Um exemplo simples é cadastrar um pet informando nome, tipo, sexo, idade e endereço. Da mesma forma, é possível consultar todos os pets já cadastrados ou editar informações de um específico.
+Configuração compatível com Render Deploy
