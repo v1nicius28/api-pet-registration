@@ -25,7 +25,7 @@ Docker
 Backend: hospedado no Render
 
 PostgreSQL: Neon
-A API é consumida pelo frontend hospedado na Vercel → https://front-pet-registration.vercel.app/.
+A API é consumida pelo frontend hospedado na Vercel → https://front-pet-registration.vercel.app
 
 🐾 Pets
 
